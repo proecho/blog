@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel = "style sheet" type = "text/css" href = "{% static 'fallendoverender/profile' %}">
+
+<head>
+	
+<title>{{user_profile.Name}}</title>
+
+</head>
+
+<body>
+	
+<h1>{{user_profile.Name}}</h1>
+
+<h1>Bio</h1>
+
+
+<p>{{user_profile.Bio}}</p>
+
+<!--<li><a href="{#url 'follower' user_profile.Profile_id #} ">followers </a> </li>-->
+
+</ul>
+</body>

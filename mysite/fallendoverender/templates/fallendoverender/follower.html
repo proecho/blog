@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel = "style sheet" type = "text/css" href = "{% static 'fallendoverender/follower' %}">
+
+<head>
+	
+<title>{{user_profile.Name}}'s followers </title>
+
+</head>
+
+<body>
+
+<ul> {% for follower in user_profile.Profile_set.all %}
+	<li><a href={{Profile.Profile_id}}"">{{Profile.Names}}</a></li>
+<ul/>
+</body>

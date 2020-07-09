@@ -1,0 +1,16 @@
+<head>
+	<title>Fallingendoverender sign-up</title> 
+</head>
+<form  method="post" enctype="multipart/form-data">{% csrf_token %}
+	<label for="Name">Name: </label>
+	<input id="Name" type="text" name = "Name" >
+	<label for="Pronouns"> Pronouns: </label>
+	<input id="Pronouns" type="text" name = "Pronouns" >
+	<label for="Bio">Bio: </label>
+	<input id="Bio" type="text" name = "Bio" >
+	<label for="Birthday">Birthday: </label>
+	<input id="Birthday" type="date" name = "Birthday" >
+	<label for="ProfilePic"> Profile Picture: </label>
+	<input id="Profile_pic" type="file" name = "Profile_pic" >
+	<input type="submit" value="OK">
+</form>
