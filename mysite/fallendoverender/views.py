@@ -8,9 +8,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 
 # Create your views here.
-def getrecentposts(profile_id, page_number=0):
-	print(page_number)
-	return post.objects.filter(Posted_by = profile_id).order_by('pub_date')[(page_number)*10:(page_number+1)*10]
+
 
 def profile_page(request, profile_id, page_number):
 	print(page_number)
